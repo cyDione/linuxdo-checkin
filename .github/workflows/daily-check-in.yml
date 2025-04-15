@@ -26,8 +26,8 @@ jobs:
 
       - name: Execute script
         env:
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+          USERNAME: ${{ secrets.LINUX_USERNAME }}
+          PASSWORD: ${{ secrets.LINUX_PASSWORD }}
         run: |
           python main.py
 
